@@ -1,0 +1,130 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* persistent */
+
+.app {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  border-bottom: 1px solid;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.logo {
+  width: 25%;
+}
+.search {
+  width: 75%;
+}
+.inputsearch {
+  width: 25rem;
+  margin: 1rem;
+  height: 2rem;
+}
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  min-height: 88vh;
+}
+
+.sidebar {
+  width: 20%;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+}
+
+.maincontent {
+  width: 80%;
+  border-bottom: 1px solid;
+}
+
+li.listItem {
+  cursor: pointer;
+  border: 1px solid darkorange;
+  padding: 5px;
+  background: moccasin;
+  border-right: none;
+}
+li.active.listItem {
+  background: darkorange;
+  color: white;
+}
+.prodImg {
+  width: 200px;
+}
+.row.product-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.col-md-4 {
+  width: 33%;
+}
+.pro-img-box {
+  margin: 2rem 1rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.panel-body.text-center {
+  text-align: center;
+}
+.opacityinput {
+  margin: 1rem;
+}
+.opacityinput input {
+  width: 100px;
+  height: 25px;
+  border: 1px solid gray;
+}
+.opacityinput button {
+  border: 1px solid silver;
+  background: gray;
+  color: white;
+  height: 30px;
+  margin: 0 10px;
+  cursor: pointer;
+}
