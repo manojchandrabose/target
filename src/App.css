@@ -1,45 +1,3 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
-/* persistent */
-
 .app {
   width: 100%;
   display: flex;
@@ -52,79 +10,92 @@
   flex-direction: row;
   width: 100%;
 }
-.logo {
-  width: 25%;
-}
-.search {
-  width: 75%;
+.title {
+  justify-content: center;
+  width: 100%;
+  display: flex;
 }
 .inputsearch {
   width: 25rem;
   margin: 1rem;
   height: 2rem;
 }
-.container {
+.container, .main {
   width: 100%;
   display: flex;
   flex-direction: row;
   min-height: 88vh;
 }
 
-.sidebar {
-  width: 20%;
+.sidebar, .middle {
+  position: relative;
+  width: 25%;
   border-right: 1px solid;
   border-bottom: 1px solid;
 }
 
-.maincontent {
-  width: 80%;
+.maincontent, .right {
+  width: 75%;
   border-bottom: 1px solid;
 }
-
-li.listItem {
-  cursor: pointer;
-  border: 1px solid darkorange;
-  padding: 5px;
-  background: moccasin;
-  border-right: none;
+.middle {
+  width: 35%;
 }
-li.active.listItem {
-  background: darkorange;
-  color: white;
+.right {
+  width: 65%;
 }
-.prodImg {
-  width: 200px;
-}
-.row.product-list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.col-md-4 {
-  width: 33%;
-}
-.pro-img-box {
-  margin: 2rem 1rem;
+.addfolder {
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
   justify-content: center;
-  align-items: center;
   display: flex;
 }
-.panel-body.text-center {
+.addfolder button {
+  background: gray;
+  border: 1px solid gray;
+  color: white;
+  padding: 5px 15px;
+}
+.sidebarnote {
+  padding: 0.25rem;
+  margin: 0.5rem 0;
+}
+.sidebarnote.active {
+  background: silver;
+}
+.mainnote-edit {
+  padding: 25px;
+}
+.sidebar-head {
   text-align: center;
 }
-.opacityinput {
-  margin: 1rem;
+.mainnote-edit input,
+textarea {
+  display: block;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  width: 100%;
+  height: calc(50vh - 130px);
+  padding: 10px;
+  resize: none;
+  font-size: inherit;
+  font-family: inherit;
 }
-.opacityinput input {
-  width: 100px;
-  height: 25px;
-  border: 1px solid gray;
+.mainnote-edit input {
+  height: 50px;
+  font-size: 2rem;
 }
-.opacityinput button {
-  border: 1px solid silver;
-  background: gray;
-  color: white;
-  height: 30px;
-  margin: 0 10px;
-  cursor: pointer;
+.mainnote-edit{
+  height: 50vh;
+}
+.noact-note {
+  width: 70%;
+  height: 75vh;
+  text-align: center;
+  font-size: 2rem;
+  color: #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

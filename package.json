@@ -1,6 +1,6 @@
 {
-  "name": "app-modal",
-  "version": "0.1.0",
+  "name": "note-app",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.2",
